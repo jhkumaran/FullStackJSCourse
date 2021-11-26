@@ -1,0 +1,17 @@
+{
+  "name": "1-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build":"npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^16.7.13",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
