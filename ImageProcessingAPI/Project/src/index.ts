@@ -9,7 +9,7 @@ app.use(routes);
 
 // Start server
 app.listen(port, async (): Promise<void> => {
-  console.log(`server started at http://localhost:${port}`);
+     console.log(`server started at http://localhost:${port}`);
 });
 
 export default app;

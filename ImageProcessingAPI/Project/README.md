@@ -6,6 +6,8 @@ Install: npm install
 Build: npm run build
 Start server: npm run start
 Run unit tests: npm run test
+Prettify: npm run prettify
+Lint: npm run lint
 
 ### Usage
 The server will listen on port 3000:
