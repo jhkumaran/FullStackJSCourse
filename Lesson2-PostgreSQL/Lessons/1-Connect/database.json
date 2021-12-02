@@ -1,0 +1,16 @@
+{
+    "dev": {
+      "driver": "pg",
+      "host": "",
+      "database": "animal_db",
+      "user": "postgres",
+      "password": "sachin2023"
+    },
+    "test": {
+      "driver": "pg",
+      "host": "",
+      "database": "animal_db",
+      "user": "postgres",
+      "password": "sachin2023"
+    }
+  }
