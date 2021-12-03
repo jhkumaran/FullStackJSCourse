@@ -69,7 +69,7 @@ Create tables in the test db with the command `db-migrate up --env test`. Once t
 `npm run test`.
 
 ## Enviromental Variables Set up
-Bellow are the environmental variables that needs to be set in a `.env` file. This is the default setting that I used for development, but you can change it to what works for you. 
+Bellow are the environmental variables that needs to be set in a `.env` file. This is the default setting that I used for development, but you can change it to what works for you. For reference purpose, envDuplicate file is created in the project which can be renamed to `.env`
 
 **NB:** The given values are used in developement and testing but not in production. 
 ```
