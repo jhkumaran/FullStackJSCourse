@@ -18,7 +18,22 @@ Your application must make use of the following libraries:
 
 ## Postgres DB
 Create a DB with the details and credentials provided in the `database.json` file. Else, update the database name and psql password to connect in `database.json` and `.env` files.
-Open the terminal and run 'db-migrate up' command for the project to setup the required tables in the database.
+Credentials:
+"dev": {
+    "driver": "pg",
+    "host": "",
+    "database": "shopping_db",
+    "user": "postgres",
+    "password": "Password@123"
+},
+"test": {
+    "driver": "pg",
+    "host": "",
+    "database": "shopping_db_test",
+    "user": "postgres",
+    "password": "Password@123"
+}
+Open the terminal and run `db-migrate up` command for the project to setup the required tables in the database.
 
 ## Build
 Once the database is setup, build the project with the command `npm run build`. Once the build is completed, the project can be started with the command `node build/server`. This will launch the API.
