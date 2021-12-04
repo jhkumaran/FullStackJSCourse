@@ -46,7 +46,7 @@ describe('Orders endpoints:', (): void => {
     });
 });
 
-describe('Products Model Tests: ', () => {
+describe('Orders Model Tests: ', () => {
     it('index method to be defined', () => {
         expect(store.index).toBeDefined();
     });

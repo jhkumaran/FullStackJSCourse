@@ -5,7 +5,7 @@ import { Orders_Products, Orders_ProductsStore } from '../models/orders_products
 const store = new Orders_ProductsStore();
 const request: supertest.SuperTest<supertest.Test> = supertest(app);
 
-describe('Orders endpoints:', (): void => {
+describe('Orders_Products endpoints:', (): void => {
     let token: string;
     beforeAll(async() => {
         token = process.env.TOKEN_TEST || '';
@@ -40,7 +40,7 @@ describe('Orders endpoints:', (): void => {
     });
 });
 
-describe('Products Model Tests: ', () => {
+describe('Orders_Products Model Tests: ', () => {
     it('show method to be defined', () => {
         expect(store.show).toBeDefined();
     });
