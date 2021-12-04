@@ -28,10 +28,12 @@ These are the notes from a meeting with the frontend developer that describe wha
 - [OPTIONAL] category
 
 # DB Schema:
-id SERIAL PRIMARY KEY,
-name VARCHAR(100),
-price INTEGER,
-category VARCHAR(100)
+CREATE TABLE products(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    price INTEGER,
+    category VARCHAR(100)
+);
 
 #### User(model)
 - id
@@ -40,10 +42,12 @@ category VARCHAR(100)
 - password
 
 # DB Schema
-id SERIAL PRIMARY KEY,
-firstname VARCHAR(100),
-lastname VARCHAR(100),
-password VARCHAR
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    firstname VARCHAR(100),
+    lastname VARCHAR(100),
+    password VARCHAR
+);
 
 #### Orders(model)
 - id
@@ -51,9 +55,11 @@ password VARCHAR
 - status of order (active or complete)
 
 # DB Schema
-id SERIAL PRIMARY KEY,
-status VARCHAR(100),
-user_id bigint REFERENCES users(id)
+CREATE TABLE orders(
+    id SERIAL PRIMARY KEY,
+    status VARCHAR(100),
+    user_id bigint REFERENCES users(id)
+);
 
 #### Orders_Products(model)
 - id
@@ -62,7 +68,9 @@ user_id bigint REFERENCES users(id)
 - quantity of product
 
 # DB Schema
-id SERIAL PRIMARY KEY,
-quantity INTEGER,
-order_id bigint REFERENCES orders(id),
-product_id bigint REFERENCES products(id)
+CREATE TABLE orders_products(
+    id SERIAL PRIMARY KEY,
+    quantity INTEGER,
+    order_id bigint REFERENCES orders(id),
+    product_id bigint REFERENCES products(id)
+);
